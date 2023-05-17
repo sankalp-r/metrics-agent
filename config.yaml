@@ -1,0 +1,13 @@
+
+# specify all the http metrics source
+httpsources:
+  - endpoints: http://localhost:8080/metrics
+  - endpoints: http://localhost:8080/metrics/v2/status
+    headers:
+      x-api-key : qwertyabcd
+
+# sample frequency is in seconds
+sampleFrequency: 1
+
+# output file name or path
+targetOutputFile: output_file
